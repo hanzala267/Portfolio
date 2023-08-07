@@ -1,0 +1,98 @@
+/* YourComponent.module.css */
+
+.asp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.left {
+  flex: 1;
+  margin-right: 16px;
+  box-shadow: rgba(0, 0, 0, 0.074) 1.95px 1.95px 2.6px;
+}
+
+.content {
+  flex: 1;
+}
+
+.pera {
+  padding-top: 25px;
+}
+
+.container {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+}
+
+/* ProjectA.module.css */
+
+/* Styles for small screens */
+@media screen and (max-width: 767px) {
+  .asp {
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 430px;
+  }
+
+  .container:hover {
+    transform: none;
+    animation: none;
+  }
+
+  .left {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .asp {
+    flex-direction: row;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    height: 500px;
+
+  }
+
+  .left {
+    margin-right: 1rem;
+  }
+}
+
+.heading2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  font-weight: bolder;
+  font-size: 250px;
+  color: white;
+  -webkit-text-stroke:  3px rgba(37, 37, 37, 0.696);
+  font-style: italic;
+
+}
+
+@media screen and (max-width: 767px) {
+  .heading2{font-size: 70px;
+    margin-top: 230px;
+
+  }
+
+
+}

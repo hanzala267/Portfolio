@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 640px;
+  background-color: #f9f9f9;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex-basis: 75%;
+  padding: 100px;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.right {
+  flex-basis: 25%;
+  padding: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logos {
+  display: flex;
+  
+  
+}
+.Typewriter{
+  font-weight: 400;
+}
+
+.responsiveImage {
+  height: 200px;
+}
+
+.logos ul {
+  list-style: none;
+  display: flex;
+  
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.logos ul li {
+  margin: 0px 10px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    
+    padding: 0;
+    height: 1300px;
+  }
+
+  .left {
+    padding: 20px;
+    max-width: 100%;
+    margin-top: -620px;
+    margin-bottom: -40px;
+  }
+
+  .right {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+
+  .logos ul{
+    flex-wrap: wrap;
+  }
+
+
+  
+}
+
+
+  .Name{
+  font-size: 40px;
+  font-weight:500;
+  }
+
+  .blob {
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: url('../../public/DP.jpeg');
+    background-size: cover;
+    background-position: center;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);*/
+    animation: blob 10s linear infinite; /* Updated animation duration */
+    /*border: 2px solid #ecda33;*/
+    border-width: 4px ;
+    border-color: #2e2d32;
+  }
+  
+  @keyframes blob {
+    0%, 100% {
+      border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+  
+    33% {
+      border-radius: 42% 28% 38% 48% / 28% 28% 72% 72%;
+    }
+  
+    66% {
+      border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .blob {
+      width: 38vh;
+      height: 38vh;
+      overflow: hidden;
+    }
+
+    .Typewriter {
+      height: 160px; /* Set a fixed height */
+      width: 100%; /* Set the width to 100% to fill the container */
+      overflow: hidden; /* Hide any overflow content */
+    }
+  }

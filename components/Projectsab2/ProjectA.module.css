@@ -1,0 +1,82 @@
+/* YourComponent.module.css */
+
+.asp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  }
+  
+  .left {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
+  .content {
+    flex: 1;
+  }
+
+
+  .pera{
+    padding-top: 25px
+  }
+
+  .container {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    
+  }
+  
+  
+  /* ProjectA.module.css */
+
+/* Styles for small screens */
+@media screen and (max-width: 767px) {
+    .asp {
+      flex-direction: column-reverse;
+
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 630px;
+    }
+  
+    .left {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 768px) {
+    .asp {
+      flex-direction: row;
+      
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1400px;
+      
+     height: 500px;
+     margin-top: -250px
+
+    }
+  
+    .left {
+      margin-right: 1rem;
+    }
+  }
+  
